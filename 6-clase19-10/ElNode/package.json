@@ -1,0 +1,19 @@
+{
+  "name": "ElNode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-styles": "^6.1.0",
+    "chalk": "^4.1.2",
+    "faker": "^5.5.3",
+    "has-flag": "^5.0.1",
+    "supports-color": "^9.0.2"
+  }
+}

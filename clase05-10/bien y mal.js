@@ -13,4 +13,5 @@
 const total = {
     bien = n ,
     mal = m ,
-}
+    (n,m)
+};
