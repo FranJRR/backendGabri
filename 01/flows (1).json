@@ -1,0 +1,135 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "maquina de perder",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f6c2cbd32f9f6bc7",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "piedra",
+        "payloadType": "str",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "095d80525db05964"
+            ]
+        ]
+    },
+    {
+        "id": "095d80525db05964",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "func": "const movMaquina = {\n    piedra: 'El bot ha decidido papel...perdiste ',\n    papel: 'El bot ha decidido tijera...perdiste',\n    tijera: 'El bot ha decidido piedra...perdiste'\n}[msg.payload];\n\nmsg.movMaquina = movMaquina;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 260,
+        "wires": [
+            [
+                "6f4eefcc5c1a0dbd"
+            ]
+        ]
+    },
+    {
+        "id": "11af8cfb8de0309c",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "papel",
+        "payloadType": "str",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "095d80525db05964"
+            ]
+        ]
+    },
+    {
+        "id": "de9895f244364cbc",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "3",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tijera",
+        "payloadType": "str",
+        "x": 170,
+        "y": 320,
+        "wires": [
+            [
+                "095d80525db05964"
+            ]
+        ]
+    },
+    {
+        "id": "6f4eefcc5c1a0dbd",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "resultado",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "movMaquina",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 260,
+        "wires": []
+    }
+]
