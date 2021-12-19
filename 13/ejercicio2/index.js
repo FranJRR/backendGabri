@@ -8,7 +8,7 @@ const testPage = `
   <meta charset="utf-8" />
 </head>
 <body>
-<h1>browser test</h1>
+<h1>Hola Mundo</h1>
 <script>console.log('you can serve up scripts with this')</script>
 </body>
 </html>
