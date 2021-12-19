@@ -23,11 +23,10 @@ GraphQL es un **lenguaje de consulta** y un tiempo de ejecución del servidor pa
 
 Gracias a GraphQL, las API son **rápidas, flexibles y sencillas** para los desarrolladores. Incluso se puede implementar en un entorno de desarrollo integrado (IDE) conocido como **GraphiQL**. GraphQL permite que los desarrolladores creen **consultas para extraer datos de varias fuentes en una sola llamada a la API.**
 
-**
 
 ***Ejemplo de GraphQL en codigo***
 
-**
+
 ![1411204-af5fb5cdfb33dfb0.png](https://programmerclick.com/images/111/615956ebb775485d96ba90fc0428b3ef.JPEG)
 
 ## Comparativas
